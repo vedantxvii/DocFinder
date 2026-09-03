@@ -1,60 +1,215 @@
-Lost & Found Document Recovery Portal
-A modern web application to help users report, search, and recover lost documents using AI-powered matching.
+ # DocFinder – Lost & Found Document Recovery Portal
 
-🚀 Features
-Report Lost/Found Documents:
-Users can report lost documents or upload details of found documents.
-AI Matching:
-Advanced AI automatically matches lost and found documents for quick recovery.
-Secure & Confidential:
-User data and document details are handled securely.
-Notifications:
-Get instant notifications when a match is found.
-User Dashboard:
-Manage your reports, profile, and notifications in one place.
-🌐 Live Demo
-👉 View Deployed App
+A modern full-stack web application that helps users **report, search, and recover lost or found documents** with the help of **AI-powered matching**.
 
-🖼️ Landing Page Preview
-The landing page features a modern hero section, feature highlights, and testimonials to build trust and guide users.
+## 🚀 Features
 
-🛠️ Tech Stack
-Frontend: React, Vite, TypeScript, Tailwind CSS
-State Management: React Context, React Query
-Authentication: Custom Auth Provider
-Icons: Lucide React
-Backend: (Add details if you have a backend, e.g., Node.js, Express, Prisma, etc.)
-📦 Getting Started
-1. Clone the Repository
-git clone https://github.com/Laibanoor92/LostFoundPortal.git
-cd LostFoundPortal/client
-2. Install Dependencies
+### 📄 Report Lost & Found Documents
+
+Users can report lost documents and submit details of documents they have found.
+
+### 🤖 AI-Powered Matching
+
+Uses the **Gemini API** to analyze document information and assist in identifying potential matches between lost and found reports.
+
+### 🔍 Search Documents
+
+Users can search and explore reported documents to find potential matches.
+
+### 🔐 Authentication
+
+Secure user authentication and protected application flows.
+
+### 🔔 Notifications
+
+Users can receive notifications related to document matches and activity.
+
+### 📊 User Dashboard
+
+Manage reports, profile information, activity, and notifications from a centralized dashboard.
+
+### 🗄️ Database Integration
+
+Persistent application data is managed using **PostgreSQL** with **Drizzle ORM**.
+
+---
+
+## 🖼️ Application Preview
+
+The application includes a modern landing page, authentication flow, user dashboard, document reporting forms, search functionality, and notification management.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* React Context
+* React Query
+* Lucide React
+
+### Backend
+
+* Node.js
+* Express.js
+* REST APIs
+
+### Database
+
+* PostgreSQL
+* Drizzle ORM
+
+### AI
+
+* Google Gemini API
+
+### Tools & Configuration
+
+* Git & GitHub
+* NPM
+* Vite
+* Vercel configuration
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/vedantxvii/DocFinder.git
+cd DocFinder
+```
+
+### 2. Install Dependencies
+
+```bash
 npm install
-3. Run the Development Server
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env` file in the project root and add the required environment variables for your database and Gemini API.
+
+Example:
+
+```env
+DATABASE_URL=your_database_url
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+> Never commit your `.env` file or expose API keys publicly.
+
+### 4. Run the Development Server
+
+```bash
 npm run dev
-Open http://localhost:5173 to view the app.
+```
 
-🏗️ Build for Production
+The application will be available at:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 🏗️ Build for Production
+
+```bash
 npm run build
-The production-ready files will be in the dist folder.
+```
 
-🚢 Deployment
-You can deploy the dist folder to any static hosting service like Vercel, Netlify, or GitHub Pages.
+This creates the production build for deployment.
 
-📁 Project Structure
-client/
-  ├── src/
-  │   ├── components/
-  │   │   └── landing/
-  │   │       └── Hero.tsx
-  │   ├── pages/
-  │   │   └── LandingPage.tsx
-  │   ├── assets/
-  │   │   └── img.png
-  │   └── ...
-  ├── public/
-  └── ...
-🙏 Credits
-Lucide Icons
-Tailwind CSS
-Vite
+---
+
+## 🚢 Deployment
+
+The application can be deployed using platforms such as:
+
+* Vercel
+* Netlify
+* Other Node.js-compatible hosting platforms
+
+---
+
+## 📁 Project Structure
+
+```text
+DocFinder/
+├── client/
+│   ├── public/
+│   └── src/
+│       ├── assets/
+│       ├── components/
+│       │   ├── auth/
+│       │   ├── dashboard/
+│       │   ├── forms/
+│       │   ├── landing/
+│       │   └── ui/
+│       ├── hooks/
+│       ├── lib/
+│       ├── pages/
+│       ├── App.tsx
+│       ├── index.css
+│       └── main.tsx
+│
+├── server/
+│   ├── db.ts
+│   ├── index.ts
+│   ├── routes.ts
+│   ├── storage.ts
+│   ├── vite.ts
+│   └── services/
+│       └── gemini.ts
+│
+├── shared/
+│   └── schema.ts
+│
+├── migrations/
+├── package.json
+├── drizzle.config.ts
+├── vite.config.ts
+├── tailwind.config.ts
+├── tsconfig.json
+├── vercel.json
+└── README.md
+```
+
+---
+
+## 🎯 Project Highlights
+
+* AI-assisted document matching
+* Full-stack React + Express architecture
+* PostgreSQL database integration
+* RESTful API development
+* User authentication
+* Responsive dashboard
+* Document search and reporting workflows
+
+---
+
+## 🙏 Credits
+
+* Google Gemini API
+* React
+* Vite
+* Tailwind CSS
+* Express.js
+* Drizzle ORM
+* Lucide React
+* PostgreSQL
+
+---
+
+## 👩‍💻 Author
+
+**Vedantxvii**
+
+GitHub: [@vedantxvii](https://github.com/vedantxvii)
